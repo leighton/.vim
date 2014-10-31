@@ -23,7 +23,9 @@ Plugin 'tpope/vim-git'
 
 " Other languages
 Plugin 'briancollins/vim-jst'
-Plugin 'pangloss/vim-javascript'
+Plugin 'pangloss/vie-javascript'
+Plugin 'elzr/vim-json'
+Plugin 'derekwyatt/vim-scala'
 
 " Html, Xml, Css, Markdown...
 Plugin 'aaronjensen/vim-sass-status.git'
