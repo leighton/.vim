@@ -23,9 +23,11 @@ Plugin 'tpope/vim-git'
 
 " Other languages
 Plugin 'briancollins/vim-jst'
-Plugin 'pangloss/vie-javascript'
+Plugin 'pangloss/vim-javascript'
 Plugin 'elzr/vim-json'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'dag/vim2hs'
+Plugin 'mxw/vim-jsx'
 
 " Html, Xml, Css, Markdown...
 Plugin 'aaronjensen/vim-sass-status.git'
@@ -35,6 +37,7 @@ Plugin 'groenewege/vim-less.git'
 Plugin 'itspriddle/vim-jquery.git'
 Plugin 'jtratner/vim-flavored-markdown.git'
 Plugin 'kchmck/vim-coffee-script'
+
 " Plugin 'kogakure/vim-sparkup.git'
 Plugin 'nelstrom/vim-markdown-preview'
 Plugin 'skwp/vim-html-escape'
@@ -179,4 +182,6 @@ set nofoldenable "dont fold by default
 " set wildignore+=tmp/**
 " set wildignore+=*.png,*.jpg,*.gif
 
-
+" ============ Plugin Configurations ===============
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+autocmd BufNewFile,BufRead *.md set filetype=markdown " set *.md to be markdown files
